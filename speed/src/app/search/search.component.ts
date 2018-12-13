@@ -24,7 +24,7 @@ export class SearchComponent implements OnInit {
         (((searchName === 'estado') && (l.status == searchValue) ||
         ((searchName === 'agencia') && (l.lsp != null) && (l.lsp.id == searchValue)) ||
         ((searchName === 'tipo') && (l.missions != null) && (l.missions.filter(m => m.type == searchValue)).length > 0)
-        ));
+        )));
      this.filteredLaunches = filteredLaunches;
   }
 }
